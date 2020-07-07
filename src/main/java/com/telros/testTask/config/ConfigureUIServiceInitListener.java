@@ -1,6 +1,6 @@
 package com.telros.testTask.config;
 
-import com.telros.testTask.LoginView;
+import com.telros.testTask.view.LoginView;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.router.BeforeEnterEvent;
 import com.vaadin.flow.server.ServiceInitEvent;

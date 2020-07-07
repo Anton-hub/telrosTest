@@ -1,4 +1,5 @@
-package com.telros.testTask;
+package com.telros.testTask.view;
+
 import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.login.LoginOverlay;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
