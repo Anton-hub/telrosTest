@@ -1,5 +1,4 @@
 package com.telros.testTask;
-import com.vaadin.flow.component.AttachEvent;
 import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.login.LoginOverlay;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -20,7 +19,7 @@ public class LoginView extends VerticalLayout implements BeforeEnterObserver  {
         login.setAction("login");
         login.setOpened(true);
         login.setTitle("Auth Task");
-        login.setDescription("Login Example");
+        login.setDescription("Example user - user:password");
         getElement().appendChild(login.getElement());
     }
 
