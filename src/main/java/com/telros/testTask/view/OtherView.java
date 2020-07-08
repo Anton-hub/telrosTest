@@ -1,11 +1,7 @@
 package com.telros.testTask.view;
 
 import com.vaadin.flow.component.UI;
-import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.button.Button;
-import com.vaadin.flow.component.html.Anchor;
-import com.vaadin.flow.component.html.Header;
-import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
@@ -20,7 +16,7 @@ public class OtherView extends VerticalLayout {
             SecurityContextHolder.clearContext();
             UI.getCurrent().getPage().reload();
         });
-        Button back = new Button("Back", event -> UI.getCurrent().navigate("login"));
+        Button back = new Button("Back", event -> UI.getCurrent().getPage().setLocation("login"));
         add(back, logout);
     }
 }
